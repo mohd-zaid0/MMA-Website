@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MMA Gear & Apparel Store</title>
+    <link rel="stylesheet" href="mma.css">
+</head>
+<body>
+    <header class=" header">
+    <div class="logo">MMA GEAR</div>
+    <nav class="nav">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#" onclick="openLogin()">Login</a></li> 
+        </ul>
+    </nav>
+    </header> 
+
+    <section id="home">
+        <h1>Welcome to the MMA Gear Store</h1>
+        <a href="#products" class="btn">Shop Now</a>
+    </section>
+
+    <section id="products">
+        <h2>Our Products</h2>
+        <div class="product-grid">
+            <div class="product-item">
+                <img src="mma gloves.webp" alt="MMA Gloves">
+                <h3>MMA Gloves</h3>
+                <p>Price: ₹5000</p>
+                <button>Add to Cart</button>
+                <button>BUY NOW</button>
+            </div>
+            <div class="product-item">
+                <img src="mma shorts.jpg" alt="MMA Shorts">
+                <h3>MMA Shorts</h3>
+                <p>Price: ₹3000</p>
+                <button>Add to Cart</button>
+                <button>BUY NOW</button>
+            </div>
+            <div class="product-item">
+                <img src="HEADGUARD.webp" alt="Headgear">
+                <h3>Headgear</h3>
+                <p>Price: ₹2500</p>
+                <button>Add to Cart</button>
+                <button>BUY NOW</button>
+            </div>
+            <div class="product-item">
+                <img src="hand guard.jpg" alt="Hand Wraps">
+                <h3>Hand Wraps</h3>
+                <p>Price: ₹2000</p>
+                <button>Add to Cart</button>
+                <button>BUY NOW</button>
+            </div>
+            <div class="product-item">
+                <img src="mouth guard.jpg" alt="MouthGuard">
+                <h3>MouthGuard</h3>
+                <p>Price: ₹1500</p>
+                <button>Add to Cart</button>
+                <button>BUY NOW</button>
+            </div>
+            <div class="product-item">
+                <img src="shin guard.webp" alt="Shin Guards">
+                <h3>Shin Guards</h3>
+                <p>Price: ₹3000</p>
+                <button>Add to Cart</button>
+                <button>BUY NOW</button>
+            </div>
+            <div class="product-item">
+                <img src="rash guard.jpg" alt="Rash Guard">
+                <h3>Rash Guard</h3>
+                <p>Price: ₹3000</p>
+                <button>Add to Cart</button>
+                <button>BUY NOW</button>
+            </div>
+            <div class="product-item">
+                <img src="punching bag.webp" alt="Punching Bag">
+                <h3>Heavy Punch Bag</h3>
+                <p>Price: ₹5000</p>
+                <button>Add to Cart</button>
+                <button>BUY NOW</button>
+            </div>
+        </div>
+
+        <!-- <section id="about" class="about">
+            <h2>About Us</h2>
+            <p>We are committed to providing high-quality "MMA EQUIPMENT" at affordable prices.</p>
+        </section> -->
+        <section class="about-us">
+            <div class="container">
+                <h1>About Us</h1>
+                <p>Welcome to <strong>[MMA Gear Store]</strong> – your one-stop shop for all your online shopping needs. We believe in providing our customers with high-quality products and exceptional customer service. Our goal is to offer you the best shopping experience, where you can find convenient and affordable options.</p>
+    
+                <h2>Why Choose Us?</h2>
+                <ul>
+                    <li><strong>Quality Products:</strong> We offer only trusted brands and high-quality products.</li>
+                    <li><strong>Secure Shopping:</strong> Our website ensures your personal information is secure.</li>
+                    <li><strong>Fast Delivery:</strong> We process your orders quickly and ensure on-time delivery.</li>
+                    <li><strong>Customer Support:</strong> Our customer service team provides prompt responses to all your queries and concerns.</li>
+                </ul>
+    
+                <p>Enjoy a hassle-free and enjoyable shopping experience with us. Our website regularly features new arrivals and exciting discounts, so you can always explore fresh options.</p>
+    
+                <p>Thank you for choosing <strong>[MMA Gear Store]</strong>! Happy shopping!</p>
+            </div>
+        </section>
+
+        <div id="loginModal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeLogin()">&times;</span>
+                <h2>Login</h2>
+                <form action="dashboard.html" method="POST">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" required>
+
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+
+                    <button type="submit">Login</button>
+
+                    <p class="forgot-password"><a href="#">Forgot Password?</a></p>
+
+                    <div class="divider">OR</div>
+
+                    <button class="google-login">
+                        <img src="goggle.webp" alt="Google Icon"> Login with Google
+                    </button>
+                </form>
+            </div>
+        </div>
+
+        <section id="contact" class="contact">
+            <h2>Contact Us</h2>
+            <form action="#" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+
+
+        <footer>
+            <p>&copy; MMA Gear Store. Thank you for your visit.</p>
+        </footer>
+
+        <script>
+            function openLogin() {
+                document.getElementById("loginModal").style.display = "block";
+            }
+
+            function closeLogin() {
+                document.getElementById("loginModal").style.display = "none";
+            }
+        </script>
+        </body>
+</html>
